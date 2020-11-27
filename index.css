@@ -23,7 +23,8 @@
 .item{
 	width: 340px;
 	height: 60px;
-	background: #eeeeee;
+    background: #eeeeee;
+    border-radius: 5px;
 }
 
 .item div{
@@ -34,7 +35,7 @@
 	font-size: 18px;
 	text-align: center;
 	line-height: 60px;
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .content{
@@ -61,4 +62,7 @@ p{
 	margin-top: 10px;
 	margin-bottom: 6px;
 	font-size: 15px;
+}
+.message{
+    color: red;
 }

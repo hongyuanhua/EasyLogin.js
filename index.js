@@ -37,46 +37,22 @@ LoginGenerator.prototype = {
       };
     }
   },
-  createInput: function (title, type, location) {
+  createInput: function (id, title, type, location) {
     const tag = document.createElement("p");
     const box = document.createElement("input");
-    const message = document.createElement("p");
+    const message = document.createElement("span");
     tag.innerHTML = title;
     box.className = "textbox";
-    message.className = type;
+    message.className = "message";
     box.type = type;
-    // if (type === "email") {
-    //   box.change(this.emailValidate(box.value));
-    // }
     box.placeholder = title;
+    box.id = id;
     const place = $(location);
     place.append(tag);
     place.append(box);
     place.append(message);
   },
 
-  inputListener: function () {
-    const inputs = $(".textbox")[0];
-    // for (let i = 0; i < inputs.length; i++) {
-    //   if (inputs[i].type === "email") {
-    //     console.log(inputs[i]);
-    //     inputs[i].change(this.emailValidate(inputs[i].value));
-    //   }
-    // }
-    console.log(inputs);
-    inputs.on(this.emailValidate(inputs.value));
-  },
-  emailValidate: function (value) {
-    if (
-      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
-        value
-      )
-    ) {
-      $(".email").innerHTML = "The email address is valid!";
-    } else {
-      $(".email").innerHTML = "This is not a valid email address!";
-    }
-  },
   createSubmit: function (type, value, location) {
     const submit = document.createElement("input");
     const br = document.createElement("br");
@@ -91,18 +67,18 @@ LoginGenerator.prototype = {
   loginModule: function () {
     this.createDiv("content", ".control", "");
     this.createDiv("current", ".content", "");
-    this.createInput("Email", "email", ".current");
-    this.createInput("Password", "password", ".current");
+    this.createInput("lemail", "Email", "email", ".current");
+    this.createInput("lpwd", "Password", "password", ".current");
     this.createSubmit("submit", "Login", ".current");
   },
 
   registerModule: function () {
     this.createDiv("past", ".content", "");
-    this.createInput("Email", "email", ".past");
-    this.createInput("First Name", "text", ".past");
-    this.createInput("Last Name", "text", ".past");
-    this.createInput("Password", "password", ".past");
-    this.createInput("Re-enter Password", "password", ".past");
+    this.createInput("remail", "Email", "email", ".past");
+    this.createInput("fname", "First Name", "text", ".past");
+    this.createInput("lname", "Last Name", "text", ".past");
+    this.createInput("rpwd", "Password", "password", ".past");
+    this.createInput("rpwd2", "Re-enter Password", "password", ".past");
     this.createSubmit("submit", "Register", ".past");
   },
 
