@@ -64,6 +64,24 @@ LoginGenerator.prototype = {
     place.append(submit);
   },
 
+  createButton: function (value, location) {
+    const button = document.createElement("button");
+    // button.value = value;
+    button.innerHTML = value;
+    button.onclick = function () {
+      openLoginForm();
+    };
+    const place = $(location);
+    place.append(button);
+  },
+
+  createPopup_close: function () {
+    this.createDiv("close", ".control", "×");
+    $(".close")[0].onclick = function () {
+      closeLoginForm();
+    };
+  },
+
   loginModule: function () {
     this.createDiv("content", ".control", "");
     this.createDiv("current", ".content", "");
@@ -100,3 +118,11 @@ LoginGenerator.prototype = {
     body[0].style.backgroundImage = "url(" + src + ")";
   },
 };
+
+function openLoginForm() {
+  document.body.classList.add("showLoginForm");
+}
+
+function closeLoginForm() {
+  document.body.classList.remove("showLoginForm");
+}

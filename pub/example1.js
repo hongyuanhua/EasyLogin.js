@@ -1,11 +1,14 @@
 const lg = new LoginGenerator();
+lg.createButton("Login/Register", "body");
+lg.createDiv("popup-overlay", "body", "");
 lg.createDiv("control", "body", "");
+lg.createPopup_close();
 lg.createTab();
 lg.loginModule();
 lg.registerModule();
 lg.changeTab();
-lg.centreLayout();
-lg.changeBackground("background.jpg");
+// lg.centreLayout();
+// lg.changeBackground("background.jpg");
 inputListener("#lemail", "email");
 inputListener("#remail", "email");
 inputListener("#fname", "text");
