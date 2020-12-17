@@ -11,15 +11,25 @@
     background-color:#1c8adb;
 }
 
-.textbox{
-    border-radius:20px; 
-    padding:10px; 
-    margin: 10px 0; 
-    border:1px solid #999; 
-    outline:none; 
-    width: 80%;
+.submit:hover{
+    background-color:#2ecc71;
 }
 
+.textbox{
+    border-radius:24px; 
+    padding:14px 10px; 
+    margin: 20px auto; 
+    border:2px solid #3498db; 
+    outline:none; 
+    width: 200px;
+    transition: 0.25s;
+    display: block;
+    text-align: center;
+}
+.textbox:focus{
+    width: 280px;
+    border-color: #2ecc71;
+}
 .item{
 	width: 340px;
 	height: 60px;
