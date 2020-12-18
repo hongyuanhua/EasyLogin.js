@@ -55,7 +55,8 @@ body{
 }
 
 .content{
-	width: 100%;
+    width: 100%;
+    /* transition: all 0.1s ease-in-out; */
 }
 .content div{
 	margin: 20px 30px;
@@ -68,12 +69,20 @@ body{
 .item div:hover{
 	background: #f6f6f6;
 }
+
+.current_initial{
+    opacity:1;
+    transition: all 0.6s ease-in-out;
+}
+
 .current{
+    transform:translate(-50%,-50%) scale(0.01);
     opacity:1;
     transition: all 0.6s ease-in-out;
 }
 
 .display{
+    transform:scale(1);
     display: block;
 }
 

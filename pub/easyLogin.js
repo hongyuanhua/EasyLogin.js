@@ -101,10 +101,10 @@ LoginGenerator.prototype = {
 
   loginModule: function () {
     this.createDiv("content", ".control", "");
-    this.createDiv("current", ".content", "");
-    this.createInput("lemail", "Email", "email", ".current");
-    this.createInput("lpwd", "Password", "password", ".current");
-    this.createSubmit("submit", "Login", ".current");
+    this.createDiv("current_initial", ".content", "");
+    this.createInput("lemail", "Email", "email", ".current_initial");
+    this.createInput("lpwd", "Password", "password", ".current_initial");
+    this.createSubmit("submit", "Login", ".current_initial");
   },
 
   registerModule: function () {
