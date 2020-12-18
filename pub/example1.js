@@ -4,11 +4,13 @@ lg.createDiv("popup-overlay", "body", "");
 lg.createDiv("control", "body", "");
 lg.createPopup_close();
 lg.createTab();
+//create avatar
+lg.createAvatar("logo.png");
 lg.loginModule();
 lg.registerModule();
 lg.changeTab();
 // lg.centreLayout();
-// lg.changeBackground("background.jpg");
+lg.changeBackground("background.jpg");
 inputListener("#lemail", "email");
 inputListener("#remail", "email");
 inputListener("#fname", "text");

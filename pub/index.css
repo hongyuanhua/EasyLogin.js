@@ -1,3 +1,6 @@
+body{
+    font-family: Sans-serif;
+}
 .submit{
     color: #fff; 
     width: 100%; 
@@ -9,6 +12,7 @@
     outline: none; 
     cursor:pointer; 
     background-color:#1c8adb;
+    transition: all ease 0.5s;
 }
 
 .submit:hover{
@@ -27,17 +31,19 @@
     text-align: center;
 }
 .textbox:focus{
-    width: 280px;
+    width: 250px;
     border-color: #2ecc71;
 }
 .item{
 	width: 340px;
 	height: 60px;
     background: #eeeeee;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 .item div{
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
 	width: 170px;
 	height: 60px;
 	display: inline-block;
@@ -63,11 +69,30 @@
 	background: #f6f6f6;
 }
 .current{
+    opacity:1;
+    transition: all 0.6s ease-in-out;
+}
+
+.display{
     display: block;
 }
+
+.past_initial{
+    opacity:0;
+    display: none;
+    transition: all 0.6s ease-in-out;
+}
+
 .past{
+    transform:translate(-50%,-50%) scale(0.2);
+    opacity:0;
+    transition: all 0.6s ease-in-out;
+}
+
+.hidden{
     display: none;
 }
+
 p{
 	color: #4a4a4a;
 	margin-top: 10px;
@@ -88,6 +113,7 @@ p{
     left:50%;
     transform:translate(-50%,-50%) scale(.5);
     width:340px;
+    border-radius: 20px;
     background:#f5f5f5;
     z-index:2;
     opacity:0;
@@ -96,6 +122,8 @@ p{
 }
 
 button{
+    border:none; 
+    outline: none;
     position:absolute;
     width: 200px;
     height: 40px;
@@ -150,11 +178,21 @@ body.showLoginForm .control {
     text-align:center;
     border-radius:50%;
     cursor:pointer;
+    transform:scale(1);
     transition: 0.25s;
 }
 
 .close:hover{
-    width:40px;
-    height:40px;
+    transform:scale(1.5);
     background:#2ecc71;
 }
+
+.avatar{
+    margin:30px 0px 20px;
+    text-align:center;
+}
+
+.avatar img {
+    width:120px;
+    border-radius:50%;
+  }

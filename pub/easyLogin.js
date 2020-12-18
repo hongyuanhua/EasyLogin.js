@@ -30,10 +30,20 @@ LoginGenerator.prototype = {
         for (let j = 0; j < item.length; j++) {
           item[j].className = "";
           content[j].className = "past";
+          setTimeout(function () {
+            if (content[j].className == "past") {
+              content[j].classList.add("hidden");
+            }
+          }, 750);
         }
         this.className = "active";
         item[i].index = i;
         content[i].className = "current";
+        setTimeout(function () {
+          if (content[i].className == "current") {
+            content[i].classList.add("display");
+          }
+        }, 750);
       };
     }
   },
@@ -82,6 +92,13 @@ LoginGenerator.prototype = {
     };
   },
 
+  createAvatar: function (src) {
+    this.createDiv("avatar", ".control", "");
+    const logo = document.createElement("img");
+    logo.src = src;
+    $(".avatar").append(logo);
+  },
+
   loginModule: function () {
     this.createDiv("content", ".control", "");
     this.createDiv("current", ".content", "");
@@ -91,13 +108,13 @@ LoginGenerator.prototype = {
   },
 
   registerModule: function () {
-    this.createDiv("past", ".content", "");
-    this.createInput("remail", "Email", "email", ".past");
-    this.createInput("fname", "First Name", "text", ".past");
-    this.createInput("lname", "Last Name", "text", ".past");
-    this.createInput("rpwd", "Password", "password", ".past");
-    this.createInput("rpwd2", "Re-enter Password", "password", ".past");
-    this.createSubmit("submit", "Register", ".past");
+    this.createDiv("past_initial", ".content", "");
+    this.createInput("remail", "Email", "email", ".past_initial");
+    this.createInput("fname", "First Name", "text", ".past_initial");
+    this.createInput("lname", "Last Name", "text", ".past_initial");
+    this.createInput("rpwd", "Password", "password", ".past_initial");
+    this.createInput("rpwd2", "Re-enter Password", "password", ".past_initial");
+    this.createSubmit("submit", "Register", ".past_initial");
   },
 
   centreLayout: function () {
