@@ -86,13 +86,13 @@ p{
     position:absolute;
     top:-150%;
     left:50%;
-    transform:translate(-50%,-50%) scale(1.15);
+    transform:translate(-50%,-50%) scale(.5);
     width:340px;
     background:#f5f5f5;
     z-index:2;
     opacity:0;
     box-shadow:5px 5px 3px rgba(0,0,0,0.2);
-    transition:transform 300ms ease-in-out,opacity 300ms ease-in-out;
+    transition:top 1000ms ease-in-out,transform 300ms ease-in-out,opacity 300ms ease-in-out;
 }
 
 button{
@@ -124,18 +124,20 @@ button:hover{
     z-index:1;
     background:rgba(0,0,0,0.5);
     display:none;
-  }
+}
 
-  body.showLoginForm .popup-overlay {
+body.showLoginForm .popup-overlay {
     display:block;
-  }
-  body.showLoginForm .control {
+}
+
+body.showLoginForm .control {
     top:50%;
     opacity:1;
     transform:translate(-50%,-50%) scale(1);
-  }
+    transition: transform 300ms cubic-bezier(0.18,0.89,0.43,1.19);
+}
 
-  .close{
+.close{
     position:absolute;
     top:-10px;
     right:-10px;
@@ -149,10 +151,10 @@ button:hover{
     border-radius:50%;
     cursor:pointer;
     transition: 0.25s;
-  }
+}
 
-  .close:hover{
+.close:hover{
     width:40px;
     height:40px;
     background:#2ecc71;
-  }
+}
