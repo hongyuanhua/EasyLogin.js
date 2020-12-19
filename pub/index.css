@@ -3,7 +3,9 @@ body{
 }
 .submit{
     color: #fff; 
-    width: 100%; 
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
     padding: 10px; 
     border-radius: 20px; 
     font-size: 15px; 
@@ -18,6 +20,38 @@ body{
 .submit:hover{
     background-color:#2ecc71;
 }
+
+.submit.loading{
+    background-color: transparent;
+    border: 3px solid #2ecc71;
+    border-left-color: transparent;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    margin-left:40% ;
+    border-radius: 50%;
+    animation: rotate 1.4s ease 0.5s infinite;
+}
+
+.submit.loading.success{
+    position: relative;
+    border: 3px solid #2ecc71;
+    background: url(ok.svg) no-repeat;
+}
+
+.submit.loading.fail{
+    position: relative;
+    border: 3px solid red;
+    background: url(close.svg) no-repeat;
+}
+
+
+@keyframes rotate {
+    0%{
+        transform: rotate(360deg);
+    }
+}
+
 
 .textbox{
     border-radius:24px; 
@@ -204,4 +238,4 @@ body.showLoginForm .control {
 .avatar img {
     width:120px;
     border-radius:50%;
-  }
+}

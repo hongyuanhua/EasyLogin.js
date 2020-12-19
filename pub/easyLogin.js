@@ -117,6 +117,39 @@ LoginGenerator.prototype = {
     this.createSubmit("submit", "Register", ".past_initial");
   },
 
+  addSubmitAnimation: function (result) {
+    for (let i = 0; i < $(".submit").length; i++) {
+      $(".submit")[i].onclick = function () {
+        $(this).addClass("loading");
+        const tmp = $(this);
+        setTimeout(function () {
+          tmp.addClass(result);
+        }, 3700);
+      };
+    }
+  },
+
+  easyLogin: function (avatar_src, background_src) {
+    this.createButton("Login/Register", "body");
+    this.createDiv("popup-overlay", "body", "");
+    this.createDiv("control", "body", "");
+    this.createPopup_close();
+    this.createTab();
+    this.createAvatar(avatar_src);
+    this.loginModule();
+    this.registerModule();
+    this.changeTab();
+    this.addSubmitAnimation("fail");
+    this.changeBackground(background_src);
+    inputListener("#lemail", "email");
+    inputListener("#remail", "email");
+    inputListener("#fname", "text");
+    inputListener("#lname", "text");
+    inputListener("#lpwd", "pwd");
+    inputListener("#rpwd", "pwd");
+    inputListener("#rpwd2", "repwd");
+  },
+
   centreLayout: function () {
     // const control = $(".control");
     $(".control")[0].style =
