@@ -1,0 +1,178 @@
+body{
+    background-image: url("background.jpg");
+}
+
+h2{
+    color: white;
+    position: absolute;
+    display: block;
+}
+
+.des p{
+    margin-right: 70%;
+    top:7%;
+    color: white;
+    position: absolute;
+    display: block;
+}
+
+.example1 h3{
+    margin-right: 70%;
+    top:15%;
+    color: white;
+    position: absolute;
+    display: block;
+}
+
+.example1_des p{
+    margin-right: 70%;
+    top:20%;
+    color: white;
+    position: absolute;
+    display: block;
+}
+
+
+.example2 h3{
+    margin-right: 70%;
+    top:30%;
+    color: white;
+    position: absolute;
+    display: block;
+}
+
+.example2_des p{
+    margin-right: 72%;
+    top:35%;
+    color: white;
+    position: absolute;
+    display: block;
+}
+
+.example3 h3{
+    margin-right: 70%;
+    top:45%;
+    color: white;
+    position: absolute;
+    display: block;
+}
+
+.example3_des p{
+    margin-right: 72%;
+    top:50%;
+    color: white;
+    position: absolute;
+    display: block;
+}
+
+.example4 h3{
+    margin-right: 70%;
+    top:57%;
+    color: white;
+    position: absolute;
+    display: block;
+}
+
+.example4_des p{
+    margin-right: 72%;
+    top:62%;
+    color: white;
+    position: absolute;
+    display: block;
+}
+
+.example5 h3{
+    margin-right: 70%;
+    top:67%;
+    color: white;
+    position: absolute;
+    display: block;
+}
+
+.example5_des p{
+    margin-right: 72%;
+    top:70%;
+    color: white;
+    position: absolute;
+    display: block;
+}
+
+.example6 h3{
+    margin-right: 70%;
+    top:73%;
+    color: white;
+    position: absolute;
+    display: block;
+}
+
+.example6_des p{
+    margin-right: 72%;
+    top:76%;
+    color: white;
+    position: absolute;
+    display: block;
+}
+
+.example7 h3{
+    margin-right: 70%;
+    top:80%;
+    color: white;
+    position: absolute;
+    display: block;
+}
+
+.example7_des p{
+    margin-right: 72%;
+    top:83%;
+    color: white;
+    position: absolute;
+    display: block;
+}
+
+.example8 h3{
+    margin-right: 70%;
+    top:90%;
+    color: white;
+    position: absolute;
+    display: block;
+}
+
+.example8_des p{
+    margin-right: 72%;
+    top:93%;
+    color: white;
+    position: absolute;
+    display: block;
+}
+
+.example9 h3{
+    margin-right: 70%;
+    top:100%;
+    color: white;
+    position: absolute;
+    display: block;
+}
+
+.example9_des p{
+    margin-right: 72%;
+    top:103%;
+    color: white;
+    position: absolute;
+    display: block;
+}
+
+.example0 h3{
+    margin-right: 70%;
+    top:108%;
+    color: white;
+    position: absolute;
+    display: block;
+}
+
+.example0_des p{
+    margin-right: 72%;
+    top:112%;
+    color: white;
+    position: absolute;
+    display: block;
+}

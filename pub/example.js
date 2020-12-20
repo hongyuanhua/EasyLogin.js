@@ -1,4 +1,7 @@
 const lg = new LoginGenerator();
+lg.easyLogin("35%", "10%", "logo.png", "background.jpg");
+lg.addSubmitAnimation("success");
+
 // lg.createButton("Login/Register", "body");
 // lg.createDiv("popup-overlay", "body", "");
 // lg.createDiv("control", "body", "");
@@ -19,4 +22,3 @@ const lg = new LoginGenerator();
 // inputListener("#lpwd", "pwd");
 // inputListener("#rpwd", "pwd");
 // inputListener("#rpwd2", "repwd");
-lg.easyLogin("logo.png", "background.jpg");

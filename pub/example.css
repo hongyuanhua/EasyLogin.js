@@ -1,0 +1,53 @@
+h2{
+    color: white;
+    position: absolute;
+    display: block;
+}
+
+.des p{
+    margin-right: 70%;
+    top:7%;
+    color: white;
+    position: absolute;
+    display: block;
+}
+
+.example1 h3{
+    margin-right: 70%;
+    top:15%;
+    color: white;
+    position: absolute;
+    display: block;
+}
+
+.code p{
+    margin-right: 70%;
+    top:22%;
+    color: white;
+    position: absolute;
+    display: block;
+}
+
+.example1_des p{
+    margin-right: 70%;
+    top:40%;
+    color: white;
+    position: absolute;
+    display: block;
+}
+
+.example2 h3{
+    margin-right: 70%;
+    top:62%;
+    color: white;
+    position: absolute;
+    display: block;
+}
+
+.example2_des p{
+    margin-right: 72%;
+    top:70%;
+    color: white;
+    position: absolute;
+    display: block;
+}

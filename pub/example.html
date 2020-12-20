@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Example</title>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer type="text/javascript" src='easyLogin.js'></script>
+    <script defer type="text/javascript" src='inputValidator.js'></script>
+    <script defer type="text/javascript" src='example.js'></script>
+   <link rel="stylesheet" href="index.css">
+   <link rel="stylesheet" href="example.css">
+  </head>
+  <body>
+    <h2>Example</h2>
+    <div class="des"><p>As the name suggests, how to apply this Login and Register library aims to be as easy as possbile. Developers simpiliy just need to import the "easyLogin.js", "inputValidator.js", and ”index.css“. And then, after this import process, developers need to create a seperate js file to create the Ojbect and call the API</p></div>
+    <div class="example1"><h3>Here is a js example about how to create and customize your "EasyLogin" module</h3></div>
+    <div class="code">
+        <p>const lg = new LoginGenerator();<br>
+        lg.easyLogin("35%", "10%", "logo.png", "background.jpg");<br>
+        lg.addSubmitAnimation("success");</p>
+    </div>
+    <div class="example1_des"><p>lg.easyLogin("35%", "10%", "logo.png", "background.jpg");
+        <br> is going to create a Pop-up EasyLogin window with some animations with "35%"" from the top
+        , 10% form the left. "logo.png" is the the Avatar src and "background.jpg" is the background picture src. The user can customize their module based
+        on their needs.
+        <br><br>
+        lg.addSubmitAnimation("success");<br>
+         is going to add login and register button animation, developers can integrate this api call with their code.
+         For example, if the login is successful, they can call lg.addSubmitAnimation("success"). Or, if the login is unsuccessful, they can call lg.addSubmitAnimation("fail")
+          to add the failure animation.
+    </p>
+    </div>
+    <div class="example2"><h3>The example above is about how to create a predefined EasyLogin Module. It is very simply and easy to use. The developers can also choose to create their own template.</h3></div>
+    <div class="example2_des">
+        <p>Developers can take a look at the code and API documentation of "loginModule", "registerModule" and "easyLogin". These parts are the format for us to create own template and very easy to understand.
+            This library aims to give enough flexablity for developers to create their own template by giving them enough precreated helper APIs.
+             Developers can choose to add customized numbers of input box, and various kinds of input validation schema to the input box</p>
+
+    </div>
+  </body>
+</html>

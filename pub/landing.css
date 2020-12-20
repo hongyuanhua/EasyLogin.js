@@ -1,0 +1,31 @@
+h1{
+    color: white;
+    position: absolute;
+    display: block;
+    top:30%;
+    left:40%;
+}
+h2{
+    padding: 10%;
+    color: white;
+    position: absolute;
+    display: block;
+    top:20%;
+}
+body{
+    background-image: url("background.jpg");
+}
+
+.example{
+    color: white;
+    top:70%;
+    left: 40%;
+    position: absolute;
+}
+
+.api{
+    color: white;
+    top:70%;
+    left: 45%;
+    position: absolute;
+}

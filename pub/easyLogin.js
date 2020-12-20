@@ -129,7 +129,7 @@ LoginGenerator.prototype = {
     }
   },
 
-  easyLogin: function (avatar_src, background_src) {
+  easyLogin: function (top, left, avatar_src, background_src) {
     this.createButton("Login/Register", "body");
     this.createDiv("popup-overlay", "body", "");
     this.createDiv("control", "body", "");
@@ -139,8 +139,11 @@ LoginGenerator.prototype = {
     this.loginModule();
     this.registerModule();
     this.changeTab();
-    this.addSubmitAnimation("fail");
     this.changeBackground(background_src);
+    if (top != "default" && left != "default") {
+      $("button")[0].style.top = top;
+      $("button")[0].style.left = left;
+    }
     inputListener("#lemail", "email");
     inputListener("#remail", "email");
     inputListener("#fname", "text");
