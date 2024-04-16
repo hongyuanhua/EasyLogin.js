@@ -1,4 +1,4 @@
-# js-library-huahongy
+# js-library-huahongy(Links are deprecated)
 ####
 Link to Landing Page: https://vast-stream-58057.herokuapp.com/
 ####
